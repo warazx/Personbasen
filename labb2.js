@@ -56,7 +56,7 @@ addEventListener('load', function () {
         sum += (calculatedNumber >= 10) ? calculatedNumber % 10 + 1 : calculatedNumber;
         multiplier = (multiplier === 2) ? 1 : 2;
       }
-      var checkSum = 10 - (sum % 10);
+      var checkSum = (sum % 10 === 10) ? 0 : 10 - (sum % 10);
       var userCheckSum = stripedSSN.slice(-1);
       return checkSum == userCheckSum;
     }
