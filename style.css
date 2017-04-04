@@ -1,5 +1,8 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
 body {
   text-align: center;
+  font-family: 'Lato', sans-serif;
   background-color: ivory;
 }
 
@@ -23,6 +26,10 @@ table {
 th {
   text-align: center;
   background-color: lightgray;
+}
+
+button {
+  float: right;
 }
 
 #errorMessage {
