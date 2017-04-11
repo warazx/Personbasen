@@ -2,8 +2,8 @@
 
 body {
   text-align: center;
-  font-family: 'Lato', sans-serif;
-  background-color: ivory;
+  font-family: 'Lato', "Arial", sans-serif;
+  background-image: url("background.jpg");
 }
 
 div {
