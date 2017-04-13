@@ -21,12 +21,16 @@ addEventListener('load', () => {
     function addRowToTable(ssn) {
       const row = table.insertRow(1);
       const pnCell = row.insertCell(0);
+      pnCell.className = "tableColumn-1";
       const ageCell = row.insertCell(1);
+      ageCell.className = "tableColumn-2";
+      const removeCell = row.insertCell(2);
+      removeCell.className = "tableColumn-3";
       pnCell.innerHTML = ssn;
       ageCell.innerHTML = calculateAge(ssn);
       const removeButton = document.createElement('button');
       removeButton.textContent = 'X';
-      ageCell.appendChild(removeButton);
+      removeCell.appendChild(removeButton);
     }
 
     function calculateAge(ssn) {
