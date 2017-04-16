@@ -14,6 +14,10 @@ addEventListener('load', () => {
     if(isValidSSN(submitText)) {
       addRowToTable(submitText);
       document.getElementById('errorMessage').style.visibility = 'collapse';
+      document.getElementById('successArrow').classList.add('arrow');
+      setTimeout(() => {
+        document.getElementById('successArrow').classList.remove('arrow');
+      }, 1200);
     } else {
       document.getElementById('errorMessage').style.visibility = 'visible';
     }

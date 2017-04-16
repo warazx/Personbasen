@@ -169,3 +169,34 @@ a:visited {
     width: 65%;
   }
 }
+
+/* -------------
+  SVG
+------------- */
+
+@keyframes move {
+  0% { transform: translateX(0); }
+  80% { transform: translateX(120px); }
+  100% { transform: translateX(120px); }
+}
+
+@keyframes hide {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes show {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+svg * {
+  transform-origin: 50% 50%;
+}
+
+.arrow {
+  animation:  show .2s ease-in,
+              move 1s .2s ease-in backwards,
+              hide 1s .2s ease;
+}
